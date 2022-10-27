@@ -14,8 +14,8 @@ import java.util.TreeMap;
  */
 public class StringUtils {
 
-<span class="nc" id="L17">    public StringUtils() {</span>
-<span class="nc" id="L18">    }</span>
+<span class="fc" id="L17">    public StringUtils() {</span>
+<span class="fc" id="L18">    }</span>
 
     /**
      * Vérifie si la chaine entrée est valide
@@ -24,11 +24,11 @@ public class StringUtils {
      * @return true si valide false sinon
      */
     public boolean isChaineValide(String str) {
-<span class="nc bnc" id="L27" title="All 2 branches missed.">        if (str.length() &lt; 2) {</span>
-<span class="nc" id="L28">            throw new IllegalArgumentException(</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">        if (str.length() &lt; 2) {</span>
+<span class="fc" id="L28">            throw new IllegalArgumentException(</span>
                     &quot;Il faut au moins deux caractere en entrée&quot;);
         }
-<span class="nc" id="L31">        return true;</span>
+<span class="fc" id="L31">        return true;</span>
     }
 
     /**
@@ -39,14 +39,14 @@ public class StringUtils {
      */
     public String inverse(String str) {
 
-<span class="nc" id="L42">        int longueur = str.length();</span>
-<span class="nc" id="L43">        StringBuffer envers = new StringBuffer();</span>
+<span class="fc" id="L42">        int longueur = str.length();</span>
+<span class="fc" id="L43">        StringBuffer envers = new StringBuffer();</span>
         int i;
 
-<span class="nc bnc" id="L46" title="All 2 branches missed.">        for (i = 0; i &lt; longueur; i++) {</span>
-<span class="nc" id="L47">            envers.append(str.charAt(longueur - i - 1));</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        for (i = 0; i &lt; longueur; i++) {</span>
+<span class="fc" id="L47">            envers.append(str.charAt(longueur - i - 1));</span>
         }
-<span class="nc" id="L49">        return new String(envers);</span>
+<span class="fc" id="L49">        return new String(envers);</span>
     }
 
     /**
@@ -57,28 +57,28 @@ public class StringUtils {
      * @return boolean : vrai ou faux
      */
     public boolean isPalindrome(String str) {
-<span class="nc bnc" id="L60" title="All 2 branches missed.">        if (inverse(str).equalsIgnoreCase(str)) {</span>
-<span class="nc" id="L61">            return true;</span>
+<span class="fc bfc" id="L60" title="All 2 branches covered.">        if (inverse(str).equalsIgnoreCase(str)) {</span>
+<span class="fc" id="L61">            return true;</span>
         }
-<span class="nc" id="L63">        return false;</span>
+<span class="fc" id="L63">        return false;</span>
     }
 
     public Map&lt;String, Integer&gt; compterOccurences(String str) {
         Map&lt;String, Integer&gt; map;
-<span class="nc" id="L68">        map = new TreeMap&lt;&gt;();</span>
+<span class="fc" id="L68">        map = new TreeMap&lt;&gt;();</span>
 
-<span class="nc bnc" id="L70" title="All 2 branches missed.">        for (int i = 0; i &lt; str.length(); i++) {</span>
-<span class="nc" id="L71">            int nombreOccurrencesCharActuel = 0;</span>
+<span class="fc bfc" id="L70" title="All 2 branches covered.">        for (int i = 0; i &lt; str.length(); i++) {</span>
+<span class="fc" id="L71">            int nombreOccurrencesCharActuel = 0;</span>
 
-<span class="nc bnc" id="L73" title="All 2 branches missed.">            for (int j = 0; j &lt; str.length(); j++) {</span>
-<span class="nc bnc" id="L74" title="All 2 branches missed.">                if (str.charAt(i) == str.charAt(j)) {</span>
-<span class="nc" id="L75">                    nombreOccurrencesCharActuel++;</span>
+<span class="fc bfc" id="L73" title="All 2 branches covered.">            for (int j = 0; j &lt; str.length(); j++) {</span>
+<span class="fc bfc" id="L74" title="All 2 branches covered.">                if (str.charAt(i) == str.charAt(j)) {</span>
+<span class="fc" id="L75">                    nombreOccurrencesCharActuel++;</span>
                 }
             }
-<span class="nc" id="L78">            map.put(String.valueOf(str.charAt(i)), nombreOccurrencesCharActuel);</span>
+<span class="fc" id="L78">            map.put(String.valueOf(str.charAt(i)), nombreOccurrencesCharActuel);</span>
 
         }
-<span class="nc" id="L81">        return map;</span>
+<span class="fc" id="L81">        return map;</span>
 
     }
 }

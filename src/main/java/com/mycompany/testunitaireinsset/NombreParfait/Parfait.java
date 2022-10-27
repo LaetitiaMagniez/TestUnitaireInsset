@@ -13,9 +13,9 @@ public class Parfait {
 
 
 
-  public Parfait() {
+ // public Parfait() {
 
-  }
+ //}
 
   
   public boolean estDivisiblePar(long n, long val) {

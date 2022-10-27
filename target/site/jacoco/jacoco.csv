@@ -2,6 +2,6 @@ GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_
 TestUnitaireInsset,com.mycompany.testunitaireinsset.NombrePremier,NombrePremier,0,66,1,11,0,16,1,9,0,4
 TestUnitaireInsset,com.mycompany.testunitaireinsset.NombrePremier,Main,37,0,2,0,9,0,3,0,2,0
 TestUnitaireInsset,com.mycompany.testunitaireinsset.NombreParfait,Main,29,0,0,0,7,0,2,0,2,0
-TestUnitaireInsset,com.mycompany.testunitaireinsset.NombreParfait,Parfait,152,0,18,0,31,0,14,0,5,0
-TestUnitaireInsset,com.mycompany.testunitaireinsset.string,StringUtils,94,0,12,0,21,0,11,0,5,0
+TestUnitaireInsset,com.mycompany.testunitaireinsset.NombreParfait,Parfait,0,152,1,17,0,30,1,13,0,5
+TestUnitaireInsset,com.mycompany.testunitaireinsset.string,StringUtils,0,94,0,12,0,21,0,11,0,5
 TestUnitaireInsset,com.mycompany.testunitaireinsset.string,Main,109,0,6,0,15,0,5,0,2,0
